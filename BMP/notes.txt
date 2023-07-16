@@ -1,0 +1,19 @@
+Standard header:
+0	w	"BM"
+2	_d	total file size
+6	w*2	usually 0
+$A	_d	pixel data address
+
+Windows 3.1 header:
+$E	_d	header size ($28)
+$12	_d	width
+$16	_d	height
+$1A	_w	number of colour planes (1)
+$1C	_w	bits per pixel (1/4/8/24)
+$1E	_d	compression type (usually 0 = none)
+$22	_d	pixel data size
+$26	_d	x resolution
+$2A	_d	y resolution
+$2E	_d	colours in palette (0 to use default)
+$32	_d	important colours (usually 0 or same as colour count)
+$36	_d*n	palette
