@@ -1,0 +1,9 @@
+Version 1 header:
+0	w	version number (1)
+2	w	size of header in words (8)
+4	w	bits per pixel (1/8)
+6	w	pattern length in bytes (?)
+8	w	pixel width in microns
+$A	w	pixel height in microns
+$C	w	width
+$E	w	height
