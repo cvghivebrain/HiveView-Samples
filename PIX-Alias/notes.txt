@@ -1,0 +1,6 @@
+Header:
+0	w	width
+2	w	height
+4	w	x offset (0)
+6	w	y offset (0)
+8	w	bits per pixel (8/24)
