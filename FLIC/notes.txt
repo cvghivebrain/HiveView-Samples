@@ -1,0 +1,10 @@
+Header:
+0	_d	file size
+4	_w	type
+6	_w	number of frames
+8	_w	width
+$A	_w	height
+$C	_w	bits per pixel (8)
+$E	_w	flags (0/3)
+$10	_d	time between frames
+$14	w	0

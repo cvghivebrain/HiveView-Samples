@@ -1,0 +1,12 @@
+Header:
+0	b*6	"GIF89a"
+6	_w	width
+8	_w	height
+$A	b	colour bitfield
+			bit 7: palette flag
+			6-4: bits per channel (minus 1)
+			3: sort flag
+			2-0: palette size (0=2; 3=16; 5=64; 7=256)
+$B	b	background colour index (usually 0)
+$C	b	apsect ratio
+$D	b*3*n	palette (rgb)

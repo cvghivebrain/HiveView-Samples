@@ -1,0 +1,14 @@
+Header:
+0	d	"$MNG"
+4	d	$0D0A1A0A
+
+8	d	size of MHDR ($1C)
+$C	d	"MHDR"
+$10	d	width
+$14	d	height
+$18	d	ticks per second
+$1C	d	layer count
+$20	d	frame count
+$24	d	play time
+$28	d	bitfield
+$2C	d	CRC

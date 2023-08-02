@@ -1,0 +1,20 @@
+Header:
+0	w	$50C3/$51C3/$52C3
+2	_w	1
+4	_w	content type (8=DIB)
+6	_d	file size minus header
+$A	_d	header size ($E)
+
+DIB header:
+$E	_d	DIB header size ($28)
+$12	_d	width
+$16	_d	height
+$1A	_w	number of colour planes (1)
+$1C	_w	bits per pixel (1/4/8/24)
+$1E	_d	compression (0=none)
+$22	_d	pixel data size
+$26	_d	x resolution
+$2A	_d	y resolution
+$2E	_d	colours in palette (0 to use default)
+$32	_d	important colours (usually 0 or same as colour count)
+$36	_d*n	palette

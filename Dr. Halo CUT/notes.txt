@@ -1,0 +1,18 @@
+CUT header:
+0	_w	width
+2	_w	height
+4	w	0
+
+PAL header:
+0	w	"AH"
+2	_w	version ($E3)
+4	_w	file size? (0 in PSP7)
+6	b	palette file id
+7	b	palette file subtype
+8	w	board id
+$A	w	graphics mode
+$C	_w	number of colours (255)
+$E	_w	max red (255)
+$10	_w	max green (255)
+$12	_w	max blue (255)
+$14	b*$18	string (blank in PSP7)

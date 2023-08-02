@@ -1,0 +1,15 @@
+GBR header:
+0	d	header size
+4	d	version (2)
+8	d	width
+$C	d	height
+$10	d	type (1=greyscale; 4=RGBA)
+$14	d	"GIMP"
+$18	d	brush spacing
+$1C	b*n	description
+
+XCF header:
+0	b*$E	version
+$E	d	width
+$12	d	height
+$16	d	type (0=RGB; 1=greyscale; 2=palette)

@@ -1,0 +1,13 @@
+Header:
+0	d	"DDS "
+4	_d	header size
+8	_d	flags ($100F)
+$C	_d	height
+$10	_d	width
+$14	_d	bytes per row
+$18	_d	depth of volume texture (0)
+$1C	_d	mipmap count (1)
+
+$50	_d	format bitfield ($40=rgb; $20=palette; 1=alpha)
+
+$58	_d	bits per pixel (8/24/32)

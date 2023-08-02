@@ -1,0 +1,19 @@
+Header:
+0	d	"FORM"
+4	d	file size (minus 8)
+8	d	"ILBM"
+$C	d	"BMHD"
+$10	d	header size ($14)
+$14	w	width
+$16	w	height
+$18	w	x offset
+$1A	w	y offset
+$1C	b	bits per pixel
+$1D	b	transparency (0=none; 1=alpha; 2=single; 3=lassoed)
+$1E	b	compression (0=none; 1=Packer)
+$1F	b	0
+$20	w	transparent colour
+$22	b	x aspect ratio (1)
+$23	b	y aspect ratio (1)
+$24	w	screen width
+$26	w	screen height

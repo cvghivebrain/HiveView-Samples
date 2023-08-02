@@ -1,0 +1,13 @@
+Version 2 header:
+0	d	"LinS"
+4	_w	width
+6	_w	height
+8	_w	x aspect ratio
+$A	_w	y aspect ratio
+$C	_w	x aspect ratio (printer)
+$E	_w	y aspect ratio (printer)
+$10	_w	width (printer)
+$12	_w	height (printer)
+$14	d	0
+$18	w	checksum of previous bytes
+$1A	w*3	0

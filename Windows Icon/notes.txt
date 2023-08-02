@@ -1,0 +1,14 @@
+Header:
+0	w	0
+2	_w	type (1=icon; 2=cursor)
+4	_w	number of images
+
+Image header:
+0/6	b	width (0=256)
+1/7	b	height (0=256)
+2/8	b	number of colours (0=no palette)
+3/9	b	0
+4/$A	_w	colour planes (0/1)
+6/$C	_w	bits per pixel
+8/$E	_d	size of image data (excluding header)
+$C/$12	_d	pointer to image data
