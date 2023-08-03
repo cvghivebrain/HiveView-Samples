@@ -1,0 +1,13 @@
+Header:
+0	b	$89
+1	b*3	"PNG"
+4	d	$0D0A1A0A
+8	d	header size
+$C	d	"IHDR"
+$10	d	width
+$14	d	height
+$18	b	bits per sample (1/4/8)
+$19	b	colour type (0=greyscale; 2=RGB; 3=palette; 4=greyA; 5=RGBA)
+$1A	b	compression (0)
+$1B	b	filter (0)
+$1C	b	interlaced (0/1)

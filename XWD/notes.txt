@@ -1,0 +1,24 @@
+Header:
+0	d	header size
+4	d	version (7)
+8	d	format? (2)
+$C	d	bits per pixel (8/24)
+$10	d	width
+$14	d	height
+$18	d	x offset
+$1C	d	byte order
+$20	d	
+$24	d	bit order
+$28	d	row padding
+$2C	d	bits per pixel (8/24)
+$30	d	bytes per row
+$34	d	format (0/1=greyscale; 2/3=palette; 4/5=RGB)
+$38	d*3	red/green/blue masks
+$44	d	bits per mask
+$48	d	total colour count
+$4C	d	palette colour count
+$50	d	screen width
+$54	d	screen height
+$58	d	x offset
+$5C	d	y offset
+$60	d	border width

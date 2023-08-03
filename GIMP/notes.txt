@@ -8,6 +8,15 @@ $14	d	"GIMP"
 $18	d	brush spacing
 $1C	b*n	description
 
+PAT header:
+0	d	header size
+4	d	version (1)
+8	d	width
+$C	d	height
+$10	d	
+$14	d	"GPAT"
+$18	b*n	description
+
 XCF header:
 0	b*$E	version
 $E	d	width

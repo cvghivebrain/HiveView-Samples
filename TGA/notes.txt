@@ -1,0 +1,16 @@
+Header:
+0	b	size of image id field (0)
+1	b	palette flag (0=no; 1=yes)
+2	b	image type (0-$7F)
+3	_w	first palette index id (0)
+5	_w	palette colour count
+7	b	bits per colour (24)
+8	_w	x offset
+$A	_w	y offset
+$C	_w	width
+$E	_w	height
+$10	b	bits per pixel (8/24/32)
+$11	b	bitfield
+			bit 5: yflip
+			4: xflip
+			3-0: number of bits to use for alpha channel (0/8)

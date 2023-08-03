@@ -1,0 +1,11 @@
+PIC header:
+0	_w	$1234
+2	_w	width
+4	_w	height
+6	_w	x offset
+8	_w	y offset
+$A	b	bits per pixel
+$B	b	palette flag ($FF=use following values; 0=start image now)
+$C	b	video mode
+$D	_w	palette type (0=none; 1=CGA; 2=PC Jr.; 3=EGA; 4=VGA)
+$F	_w	palette size in bytes (0/$30/$300)

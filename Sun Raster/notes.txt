@@ -1,0 +1,9 @@
+Header:
+0	d	$59A66A95
+4	d	width
+8	d	height
+$C	d	bits per pixel
+$10	d	file size (minus header)
+$14	d	type (0/1=normal; 2=RLE; 3=RGB; 4=TIFF; 5=IFF)
+$18	d	palette (0=no; 1=yes)
+$1C	d	palette size in bytes

@@ -1,0 +1,19 @@
+Header:
+0	b	$A
+1	b	version (0/2/3/4/5)
+2	b	compression (1=RLE)
+3	b	bits per pixel (1/4/8)
+4	_w	x min
+6	_w	y min
+8	_w	x max (width-1)
+$A	_w	y max (height-1)
+$C	_w	x resolution
+$E	_w	y resolution
+$10	b*3*16	header palette (actual palette at end of file in 8-bit images)
+$40	b	0
+$41	b	number of planes (usually 1; 3 for 24-bit image)
+$42	_w	bytes per row
+$44	_w	type (1=colour/mono; 2=greyscale)
+$46	_w	screen width
+$48	_w	screen height
+$4A	b*$36	0
